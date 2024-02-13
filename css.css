@@ -1,0 +1,32 @@
+h1 {
+	color: forestgreen;
+	background-color: mintcream;
+	border: 5px solid steelblue;
+	padding: 20px;
+	margin: 50px;
+}
+
+.meow {
+	font-size: 32px;
+	font-family: sans-serif;
+	font-weight: 8;
+	color: lightcyan;
+	font-style: italic;
+}
+
+.grr {
+	font-size: 32px;
+	font-weight: 8;
+	color: floralwhite;
+}
+
+.owo {
+	font-size: 48px;
+	color: paleturquoise;
+}
+
+.nya {
+	font-size: 32px;
+	font-weight: 10;
+	color: palevioletred;
+}
