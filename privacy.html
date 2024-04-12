@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Privacy?</title>
+	<link rel="stylesheet" type="text/css" href="privet.css"> 
+	<script>
+window.onload = function () {
+    var url = document.location.href,
+        params = url.split('?')[1].split('&'),
+        data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+         tmp = params[i].split('=');
+         data[tmp[0]] = tmp[1];
+    }
+    document.getElementById('here').innerHTML = data.name;
+}
+</script>   
+</head>
+<body style="background-color: black;">
+	<div class="crazy">
+	<h1 style="color: red"> Oops, seems like your some of your location have been potentially taken and leaked!!! </h1>
+	<h2> Looks like you haven't read the Terms and Privacy, which did state that you have gave us consent to use your information that you've input, including your IP address and your email. </h2>
+	<p style="float: left">This is a very common method used by website to take your information, they uses your trust against you. As soon as you click the sign up button, your browser on your device is instantly tagged with a tracker, which provide every actions of yours back to the website. This provides them a clear picture of who you are and your interests, which is a breach of online privacy policy and makes you a public property.</p>
+	<p style="float: right">They can also track down your location using the IP address of yours and also figure out who you are, where you are and what you are doing next. </p>
+	<h2> The website can also use your password and email address to their advantage, as most people will use the same password for every website that requires an account.</h2>
+	<p> Your email <span> thatmailyouinputbutwewontactuallytakeitcuzwearegoodppl@gmail.com </span> and your password <span>"thepasswordthatwecertainlywonttakefromu"</span> which is likely to be the password you use for your mail and any account that have the username <span> "thatusernameuputinbutwerekindsoyourwelcome" </span> and from there we can get most of your account under our control.</p>
+
+</body>
+</html>
