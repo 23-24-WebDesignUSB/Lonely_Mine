@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="hell.css">
+
+    <title>Quiz</title>
+</head>
+<body>
+  <div class="angy">
+    <h1>Quiz</h1>
+
+    <div id="question1">
+        <p>Question 1: What is your favourite genre?</p>
+        <button onclick="showQuestion2A()">Calming</button>
+        <button onclick="showQuestion2B()">Horror</button>
+        <button onclick="showQuestion2C()">Intense</button>
+    </div>
+
+    <div id="question2A" style="display: none;">
+        <p>Question 2A: What feeling do you want in the story?</p>
+        <button onclick="showResult1()">Bittersweet</button>
+        <button onclick="showResult2()">Sad</button>
+        <button onclick="showResult3()">Joy</button>
+    </div>
+
+    <div id="question2B" style="display: none;">
+        <p>Question 2B: Do you have friends?</p>
+        <button onclick="showResult4()">Yes</button>
+        <button onclick="showResult5()">No</button>
+    </div>
+
+    <div id="question2C" style="display: none;">
+        <p>Question 2C: What's your style of ?</p>
+        <button onclick="showResult6()">Direct combat (face to face)</button>
+        <button onclick="showResult7()">Stealth</button>
+        <button onclick="showResult8()">Hack n slash</button>
+    </div>
+
+    <div id="result" style="display: none;">
+        <p>Final Result: The game you fits you the most is...</p>
+        <div class="res">
+        <div id="imgAA" style="display: none">
+          <img src="g5.jpeg" alt="Omori">
+        </div>
+        <div id="imgAB" style="display: none">
+          <img src="g4.jpeg" alt="What Remains of Edith Finch">
+        </div>
+        <div id="imgAC" style="display: none">
+          <img src="g8.jpeg" alt="Unpacking">
+        </div>
+        <div id="imgBA" style="display: none">
+          <img src="g6.jpeg" alt="Signalis">
+        </div>
+        <div id="imgBB" style="display: none">
+          <img src="g7.jpeg" alt="GTFO">
+        </div>
+        <div id="imgCA" style="display: none">
+          <img src="g1.jpeg" alt="Sifu">
+        </div>
+        <div id="imgCB" style="display: none">
+          <img src="g2.jpeg" alt="Dishonored">
+        </div>
+        <div id="imgCC" style="display: none">
+          <img src="g3.jpeg" alt="Ultrakill">
+        </div>
+    </div>
+  </div>
+
+    <script>
+        function showQuestion2A() {
+            document.getElementById('question1').style.display = 'none';
+            document.getElementById('question2A').style.display = 'block';
+        }
+
+        function showQuestion2B() {
+            document.getElementById('question1').style.display = 'none';
+            document.getElementById('question2B').style.display = 'block';
+        }
+
+        function showQuestion2C() {
+            document.getElementById('question1').style.display = 'none';
+            document.getElementById('question2C').style.display = 'block';
+        }
+
+        function showResult1() {
+            document.getElementById('question2A').style.display = 'none';
+            document.getElementById('question2B').style.display = 'none';
+            document.getElementById('question2C').style.display = 'none';
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('imgAA').style.display = 'block';
+          }
+         function showResult2() {
+            document.getElementById('question2A').style.display = 'none';
+            document.getElementById('question2B').style.display = 'none';
+            document.getElementById('question2C').style.display = 'none';
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('imgAB').style.display = 'block';
+          }
+         function showResult3() {
+            document.getElementById('question2A').style.display = 'none';
+            document.getElementById('question2B').style.display = 'none';
+            document.getElementById('question2C').style.display = 'none';
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('imgAC').style.display = 'block';
+          }
+         function showResult4() {
+            document.getElementById('question2A').style.display = 'none';
+            document.getElementById('question2B').style.display = 'none';
+            document.getElementById('question2C').style.display = 'none';
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('imgBA').style.display = 'block';
+          }
+         function showResult5() {
+            document.getElementById('question2A').style.display = 'none';
+            document.getElementById('question2B').style.display = 'none';
+            document.getElementById('question2C').style.display = 'none';
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('imgBB').style.display = 'block';
+          }
+         function showResult6() {
+            document.getElementById('question2A').style.display = 'none';
+            document.getElementById('question2B').style.display = 'none';
+            document.getElementById('question2C').style.display = 'none';
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('imgCA').style.display = 'block';
+          }
+         function showResult7() {
+            document.getElementById('question2A').style.display = 'none';
+            document.getElementById('question2B').style.display = 'none';
+            document.getElementById('question2C').style.display = 'none';
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('imgCB').style.display = 'block';
+          }
+         function showResult8() {
+            document.getElementById('question2A').style.display = 'none';
+            document.getElementById('question2B').style.display = 'none';
+            document.getElementById('question2C').style.display = 'none';
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('imgCC').style.display = 'block';
+          }
+        
+    </script>
+</body>
+</html>
