@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Let him cook</title>
+	<link rel="stylesheet" href="cooked.css">
+</head>
+<body>
+	<h1>
+		Easy meal to make for you and your loved ones!
+	</h1>
+	<p>
+		You wanted to impresses your family or your girlfriend with fancy dish? Then this is the exact place to go to. Here you can check out our some classic dishes and its recipe for each dish here:
+	</p>
+	<ul>
+		<li><button onclick="salad()"> Salad </button></li>
+		<li><button onclick="spaghet()">Spaghetti</button></li>
+		<li><button onclick="moth()">Sea crystal special</button></li>
+	</ul>
+<div id="salad" style="display: none;">
+		<h2> 
+			Salads
+		</h2>
+		<h3>
+			Ingredients:
+		</h3>
+		<ul>
+			<li>Mixed greens</li>
+			<li>Assorted vegetables (such as tomatoes, cucumbers, bell peppers, carrots, etc.)</li>
+			<li>Sunflower seeds (optional)</li>
+			<li>Dressing of your choice</li>
+			</ul>
+
+			<h3> 
+				Instructions:
+			</h3>
+				<ol>
+			<li>Wash and dry the mixed greens and vegetables.</li>
+			<li>Chop the vegetables into bite-sized pieces.</li>
+			<li>In a large bowl, layer the mixed greens as the base.</li>
+			<li>Add the assorted vegetables on top of the greens.</li>
+			<li>Sprinkle a small handful of sunflower seeds for added crunch (optional).</li>
+			<li>Drizzle the salad with your favorite dressing.</li>
+			<li>Toss the salad gently to evenly distribute the dressing.</li>
+			<li>Serve and enjoy your salad!</li>
+			</ol>
+			<h3>
+			Feel free to add your own twist to the mix. Its just greens with sauce.
+			</h3>
+	<h2> Rate this recipe? </h2>
+        <br/>
+        <button onclick="rate(1)"
+              class="star">★
+        </button>
+        <button onclick="rate(2)"
+              class="star">★
+        </button>
+        <button onclick="rate(3)"
+              class="star">★
+        </button>
+        <button onclick="rate(4)"
+              class="star">★
+        </button>
+        <button onclick="rate(5)"
+              class="star">★
+        </button>
+<script type="text/javascript">
+	/* hide and unhide stuff */
+	function salad() {
+	var x = document.getElementById("salad");
+	if (x.style.display === "none"){
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}	function spaghet() {
+	var x = document.getElementById("spaghet");
+	if (x.style.display === "none"){
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}	function moth() {
+	var x = document.getElementById("moth");
+	if (x.style.display === "none"){
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+	let ratings = document.getElementsByClassName("star");
+	/* ratings */
+	function remove() {
+		let i = 0; 
+		while (i < 5) {
+			ratings(i).className = "star";
+			i++;
+		}
+	}
+	function rate(n) {
+		remove();
+		for (let i = 0; i < n; i++) {
+			if (n = 1) cls: "one";
+			else if (n = 2) cls = "two";
+			else if (n = 3) cls = "three";
+			else if (n = 4) cls = "four";
+			else if (n = 5) cls = "five";
+			ratings(i).className = cls;
+		}
+	}
+</script>
+
+
+</body>
+</html>
