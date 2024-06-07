@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="hwei.css">
+	<title>boo</title>
+</head>
+<body>
+<h1 class="header"> Minh's compsci stuff </h1>
+<h2 class="description"> text </h2>
+<div class="actualcontent">
+	<ul> 
+		<li>
+			<h1 onclick="active(1)"> About me </h1>
+		<li>
+			<h1 onclick="active(2)"> environmental call </h1>
+		</li>
+		<li>
+			<h1 onclick="active(3)"> collectors guide </h1>
+		</li>
+		<li>
+			<h1 onclick="active(4)"> privacy </h1>
+		</li>
+		<li>
+			<h1 onclick="active(5)"> buzzfeed </h1>
+		</li>
+		<li>
+			<h1 onclick="active(6)"> cookbook </h1>
+		</li>
+		</ul>
+		<div id="one" class="embed" style=" display: none;">
+				<p> short intro </p>
+				<iframe src="who.html" style = "width:600px; height: 700px; margin: auto;"></iframe>
+		</div>
+		<div id="two" class="embed" style=" display: none;">
+				<p> short intro </p>
+				<iframe src="owo.html" style=" width:600px; height:700px; style=margin: auto;"></iframe>
+		</div>
+		<div id="three" class="embed" style=" display: none;">
+				<p> short intro </p>
+				<iframe src="main.html" width="600px" height="700px" style="margin: auto;"></iframe>
+		</div>
+		<div id="four" style=" display: none;">
+				<p> short intro </p>
+				<iframe src="privacy.html" width="600px" height="700px" style="margin: auto;"></iframe>
+		</div>
+		<div id="five" class="embed" style=" display: none;">
+				<p> short intro </p>
+				<iframe src="aight.html" width="600px" height="700px" style="margin: auto;"></iframe>
+		</div>
+		<div id="six" class="embed" style=" display: none;">
+				<p> short intro </p>
+				<iframe src="coooooookboook.html" width="600px" height="700px" style="margin: auto;"></iframe>
+		</div>
+</div>
+<script type="text/javascript">
+	function active(n){
+		var x = document.getElementById("one");
+		var y = document.getElementById("two");
+		var z = document.getElementById("three");
+		var a = document.getElementById("four");
+		var b = document.getElementById("five");
+		var c = document.getElementById("six");
+		delete n;
+		if (n = 1){
+			if (x.style.display = "none"){
+				x.style.display = "block";
+				a.style.display = "none";
+				b.style.display = "none";
+				c.style.display = "none";
+				y.style.display = "none";
+				z.style.display = "none";
+			} else {
+				x.display.style = "none";
+			}
+		}
+		if (n = 2){
+			if (y.style.display = "none"){
+				y.style.display = "block";
+				a.style.display = "none";
+				b.style.display = "none";
+				c.style.display = "none";
+				x.style.display = "none";
+				z.style.display = "none";
+			} else {
+				y.display.style = "none";
+			}
+		}
+		if (n = 3){
+			if (z.style.display = "none"){
+				z.style.display = "block";
+				a.style.display = "none";
+				b.style.display = "none";
+				c.style.display = "none";
+				y.style.display = "none";
+				x.style.display = "none";
+			} else {
+				z.display.style = "none";
+			}
+		}
+		if (n = 4){
+			if (a.style.display = "none"){
+				a.style.display = "block";
+				x.style.display = "none";
+				b.style.display = "none";
+				c.style.display = "none";
+				y.style.display = "none";
+				z.style.display = "none";
+			} else {
+				a.display.style = "none";
+			}
+		}
+		if (n = 5){
+			if (b.style.display = "none"){
+				b.style.display = "block";
+				a.style.display = "none";
+				x.style.display = "none";
+				c.style.display = "none";
+				y.style.display = "none";
+				z.style.display = "none";
+			} else {
+				b.display.style = "none";
+			}
+		}
+		if (n = 6){
+			if (c.style.display = "none"){
+				c.style.display = "block";
+				a.style.display = "none";
+				b.style.display = "none";
+				x.style.display = "none";
+				y.style.display = "none";
+				z.style.display = "none";
+			} else {
+				c.display.style = "none";
+			}
+		}
+
+	}
+
+		
+
+</script>
+</body>
+</html>
